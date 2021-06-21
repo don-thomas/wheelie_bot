@@ -1,6 +1,6 @@
 <launch>
 
-  <param name="robot_description" textfile="$(find wheelie_bot)/urdf/wheelie_bot_v3.urdf" />
+  <param name="robot_description" textfile="$(find wheelie_bot)/urdf/wheelie_bot.urdf" />
 
   <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
 
