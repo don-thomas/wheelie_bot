@@ -5,6 +5,7 @@
 - ROS
 - Rviz 
 - Gazebo
+- Gazebo Additional Sensor Plugins: http://wiki.ros.org/hector_gazebo_plugins, sudo apt-get install ros-DISTRIBUTION-hector-gazebo-plugins
 
 
 ### To Run

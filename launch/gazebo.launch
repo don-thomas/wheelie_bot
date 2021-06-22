@@ -1,5 +1,8 @@
 <launch>
 
+  <remap from="/fix" to="/gps/fix"/>
+  <remap from="/wheelie_diff_drive_controller/cmd_vel" to="/cmd_vel"/>
+
   <arg name="paused" default="false" />
   <arg name="use_sim_time" default="true" />
   <arg name="gui" default="true" />
@@ -35,5 +38,8 @@
   <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering">
     <param name="default_topic" value="/wheelie_diff_drive_controller/cmd_vel" />
   </node>
+
+
+
 
 </launch>
