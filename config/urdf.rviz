@@ -62,11 +62,61 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_bottom:
+        base_footprint:
           Alpha: 1
           Show Axes: false
           Show Trail: false
         base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_caster:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_caster_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gps_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        implement_base_platform:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        implement_base_platform_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        implement_base_platform_right_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        implement_connector:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_left_wheel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_right_wheel:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -82,26 +132,63 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        base_bottom:
+        base_footprint:
           Value: true
         base_link:
           Value: true
+        front_caster:
+          Value: true
+        front_caster_wheel:
+          Value: true
+        gps_link:
+          Value: true
+        implement_base_platform:
+          Value: true
+        implement_base_platform_left_wheel:
+          Value: true
+        implement_base_platform_right_wheel:
+          Value: true
+        implement_connector:
+          Value: true
+        imu_link:
+          Value: true
+        rear_left_wheel:
+          Value: true
+        rear_right_wheel:
+          Value: true
+      Marker Alpha: 1
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
       Show Names: true
       Tree:
-        base_bottom:
+        base_footprint:
           base_link:
-            {}
+            front_caster:
+              front_caster_wheel:
+                {}
+            gps_link:
+              {}
+            implement_connector:
+              implement_base_platform:
+                implement_base_platform_left_wheel:
+                  {}
+                implement_base_platform_right_wheel:
+                  {}
+            imu_link:
+              {}
+            rear_left_wheel:
+              {}
+            rear_right_wheel:
+              {}
       Update Interval: 0
       Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_bottom
+    Fixed Frame: base_footprint
     Frame Rate: 30
   Name: root
   Tools:
@@ -131,9 +218,10 @@ Visualization Manager:
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
+      Field of View: 0.7853981852531433
       Focal Point:
-        X: 4.514702595770359e-6
-        Y: 8.138269186019897e-5
+        X: 4.514702595770359e-06
+        Y: 8.138269186019897e-05
         Z: -0.2046985626220703
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
@@ -142,7 +230,6 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 0.2853974401950836
       Target Frame: <Fixed Frame>
-      Value: Orbit (rviz)
       Yaw: 2.0503957271575928
     Saved: ~
 Window Geometry:
@@ -162,4 +249,4 @@ Window Geometry:
     collapsed: false
   Width: 1267
   X: 193
-  Y: 99
+  Y: 62
